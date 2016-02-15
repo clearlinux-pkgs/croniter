@@ -4,7 +4,7 @@
 #
 Name     : croniter
 Version  : 0.3.10
-Release  : 15
+Release  : 16
 URL      : https://pypi.python.org/packages/source/c/croniter/croniter-0.3.10.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/croniter/croniter-0.3.10.tar.gz
 Summary  : croniter provides iteration for datetime object with cron like format
