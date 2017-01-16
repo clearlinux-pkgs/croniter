@@ -4,9 +4,9 @@
 #
 Name     : croniter
 Version  : 0.3.13
-Release  : 25
-URL      : https://pypi.python.org/packages/e3/b9/2658291fb86dc07abed098b7de3b1e558761e0aa6c9ddfee7c0624a5038c/croniter-0.3.13.tar.gz
-Source0  : https://pypi.python.org/packages/e3/b9/2658291fb86dc07abed098b7de3b1e558761e0aa6c9ddfee7c0624a5038c/croniter-0.3.13.tar.gz
+Release  : 26
+URL      : http://pypi.debian.net/croniter/croniter-0.3.13.tar.gz
+Source0  : http://pypi.debian.net/croniter/croniter-0.3.13.tar.gz
 Summary  : croniter provides iteration for datetime object with cron like format
 Group    : Development/Tools
 License  : MIT
@@ -41,13 +41,15 @@ python components for the croniter package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484540383
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484540383
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
