@@ -4,7 +4,7 @@
 #
 Name     : croniter
 Version  : 0.3.16
-Release  : 29
+Release  : 30
 URL      : http://pypi.debian.net/croniter/croniter-0.3.16.tar.gz
 Source0  : http://pypi.debian.net/croniter/croniter-0.3.16.tar.gz
 Summary  : croniter provides iteration for datetime object with cron like format
